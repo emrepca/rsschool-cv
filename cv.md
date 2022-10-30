@@ -121,3 +121,19 @@ int main (){
 }
 
 ```
+
+### Work experience:
+
+*Nothing Yet...*
+
+### Education and courses:
+
+    - HTML5, CSS Course (BTK Academy Course)
+
+    - C# Course (Udemy Course)
+
+    - Git Github (BTK Academy Course)
+
+### Language:
+
+English Intermediate Level
