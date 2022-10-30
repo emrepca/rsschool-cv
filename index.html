@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cv</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container ">
+        <header>
+            <h1 class="p-information">Muhammet Emre Paça</h1>
+            <h2 class="p-information">Junior Frontend Developer</h2>
+            <h3 class="p-information">Contact Information:</h3>
+            <ul class="c-information">
+                <li>Phone: +90 5414884253</li>
+                <li>E-mail: emrepaca3@gmail.com</li>
+                <li>Discord: emrepaca#6536</li>
+                <li><a href="https://www.linkedin.com/in/muhammet-emre-pa%C3%A7a/">
+                Linkedin</a>
+                </li>
+            </ul>
+        </header>
+        <section class="section">
+            <h3  >Who am I:</h3>
+            <article class="articles" id="article-one">
+                <h3 id="me">About myself:</h3>
+                <p id="about-p">
+                I am a 3rd year university student in Turkey. I want to learn <i>Front-End Development</i>in <b>RSSchool!</b>
+                I am trying to improve myself in the field of software and I take many online courses for this.
+                </p>
+            </article>
+
+            <article class="articles" id="article-two">
+                <h3>Skills and Proficiency:</h3>
+                <ul>
+                    <li>HTML5, CSS3 Basic Level</li>
+                    <li>C# Intermediate Level</li>
+                    <li>C Intermediate Level</li>
+                    <li>Git, Github</li>
+                    <li>Editors: VS, VS Code, Dev C++</li>
+                </ul>
+            </article>
+                <br>
+            <article class="articles" id="article-three">
+                <h3>Code examples:</h3>
+                <p id="code-explanation"> <i> <b>Craps game</b>  in C language. Using the <b>rand</b> and <b>srand</b> functions.</i></p>
+                <div>
+                <pre>
+                <code class="code">
+int RollingtheDice (void){
+    int dice1,dice2,totaldice;
+    dice1=1+(rand()%6);
+    dice2=1+(rand()%6);
+    totaldice=dice1+dice2;
+    printf("Player %d + %d = %d threw.\n",dice1,dice2,totaldice);
+    return totaldice;
+    }
+int main (){
+    int total;
+    int gamestate,playerrating;
+    srand(time(NULL));
+    total = RollingtheDice();
+    switch (total){
+        case 7: case 11: gamestate = 1;
+        break;
+        case 2: case 3: case 12: gamestate = 2;
+        break;
+        default: gamestate = 0; playerrating = total;
+        printf("If the player rolls this dice, he/she will win: %d\n",total);
+        break;
+    }
+    while(gamestate == 0){
+        total = RollingtheDice( );
+        if(total == playerrating)
+            gamestate = 1;
+        else
+            if(total == 7)
+                gamestate = 2;
+            if(gamestate == 1){
+                printf("Player won.");
+            else
+                printf("Player lost.");
+            return 0;
+        }
+              </code>
+        </pre>
+
+        </div>
+            </article>
+
+            <article class="work">
+            <h3>Work experience:</h3>
+                <p class="work-language"> <i>Nothing yet...</i> </p>
+            <h3>Language:</h3>
+                <p class="work-language">English Intermediate Level</p>
+            </article>
+        </section>
+        <section class="education">
+            <h3>Education and courses:</h3>
+            <ul>
+                <li><a target="_blank" href="https://www.btkakademi.gov.tr/portal/course/html5-ile-web-gelistirme-13200">HTML5, CSS Course (BTK Academy Course)</a></li>
+                <li><a target="_blank" href="https://www.btkakademi.gov.tr/portal/course/versiyon-kontrolleri-git-ve-github-19439">Git &amp; Github (BTK Academy Course)</a></li>
+                <li><a target="_blank" href="https://www.btkakademi.gov.tr/portal/course/c-7008">C# Course (BTK Academy Course)</a></li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <a target="_blank" href="https://rs.school/"> <img id="logo" src="logos/rsschool-logo.jpg" alt="Rsschool logo"></a>
+            <a  target="_blank" href="https://github.com/emrepca"> <img id="github-logo" src="logos/GitHub-logo.png" alt="Github logo"> </a>
+            <p id="date">28.10.2022</p>
+        </footer>
+
+    </div>
+</body>
+</html>
